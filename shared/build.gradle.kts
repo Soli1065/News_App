@@ -37,6 +37,8 @@ kotlin {
             implementation("io.ktor:ktor-client-logging:2.3.0")
             implementation("io.ktor:ktor-client-content-negotiation:2.3.0")
             implementation("io.ktor:ktor-serialization-kotlinx-json:2.3.0")
+            implementation("com.russhwolf:multiplatform-settings:1.1.1")
+            implementation("com.russhwolf:multiplatform-settings-no-arg:1.1.1")
             implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
             implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1")
         }
