@@ -12,16 +12,16 @@ private val jsonParser = Json {
     ignoreUnknownKeys = true
 }
 
-class CacheManager(private val settings: Settings = Settings()) {
+open class CacheManager(private val settings: Settings = Settings()) {
 
     private val cacheKey = "cached_stories"
 
-    fun saveStories(stories: List<StoryItem>) {
+    open fun saveStories(stories: List<StoryItem>) {
         val json = jsonParser.encodeToString(stories)
         settings[cacheKey] = json
     }
 
-    fun loadStories(): List<StoryItem> {
+    open fun loadStories(): List<StoryItem> {
         val cachedJson = settings.getStringOrNull(cacheKey)
         if (cachedJson == null) return emptyList()
 

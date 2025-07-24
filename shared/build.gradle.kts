@@ -44,6 +44,9 @@ kotlin {
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
+            implementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.1")
+            implementation("com.russhwolf:multiplatform-settings-test:1.1.1")
+            implementation("org.slf4j:slf4j-nop:2.0.9")
         }
         androidMain.dependencies {
             implementation("io.ktor:ktor-client-okhttp:2.3.0")

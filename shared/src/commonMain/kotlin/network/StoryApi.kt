@@ -11,7 +11,7 @@ import model.ApiResponse
 import model.StoryItem
 import utils.Result
 
-class StoryApi {
+open class StoryApi {
 
     private val client = HttpClient {
         install(ContentNegotiation) {
@@ -22,7 +22,7 @@ class StoryApi {
         }
     }
 
-    suspend fun fetchStories(): Result<List<StoryItem>> {
+    open suspend fun fetchStories(): Result<List<StoryItem>> {
         return try {
             val response: HttpResponse = client.get("https://cbcmusic.github.io/assessment-tmp/data/data.json")
             val result: ApiResponse = response.body()
