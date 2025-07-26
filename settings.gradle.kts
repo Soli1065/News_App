@@ -1,4 +1,5 @@
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
 pluginManagement {
     repositories {
         google()
@@ -12,6 +13,8 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
     }
+
+
 }
 
 rootProject.name = "News_App_-_KMP"

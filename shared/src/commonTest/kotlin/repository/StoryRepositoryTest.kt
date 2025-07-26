@@ -1,19 +1,21 @@
 package repository
 
-import cache.CacheManager
+import com.example.newsapp_kmp.cache.CacheManager
+import com.example.newsapp_kmp.model.Media
 import com.russhwolf.settings.MapSettings
 import kotlinx.coroutines.test.runTest
-import model.StoryItem
-import network.StoryApi
-import utils.Result
+import com.example.newsapp_kmp.model.StoryItem
+import com.example.newsapp_kmp.network.StoryApi
+import com.example.newsapp_kmp.repository.StoryRepository
+import com.example.newsapp_kmp.utils.Result
 import kotlin.test.*
 
 
 class StoryRepositoryTest {
 
     private val sampleStories = listOf(
-        StoryItem(1, "Hello World", "Desc", "Author", "Source", true, 0L, "1.0", media = model.Media("img")),
-        StoryItem(2, "Kotlin is great", "Desc", "Author", "Source", true, 0L, "1.0", media = model.Media("img"))
+        StoryItem(1, "Hello World", "Desc", "Author", "Source", true, 0L, "1.0", media = Media("img")),
+        StoryItem(2, "Kotlin is great", "Desc", "Author", "Source", true, 0L, "1.0", media = Media("img"))
     )
 
     @Test

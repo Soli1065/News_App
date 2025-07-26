@@ -1,4 +1,4 @@
-package network
+package com.example.newsapp_kmp.network
 
 import io.ktor.client.*
 import io.ktor.client.call.*
@@ -7,9 +7,9 @@ import io.ktor.client.statement.*
 import io.ktor.client.plugins.contentnegotiation.*
 import io.ktor.serialization.kotlinx.json.*
 import kotlinx.serialization.json.Json
-import model.ApiResponse
-import model.StoryItem
-import utils.Result
+import com.example.newsapp_kmp.model.ApiResponse
+import com.example.newsapp_kmp.model.StoryItem
+import com.example.newsapp_kmp.utils.Result
 
 open class StoryApi {
 

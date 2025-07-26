@@ -1,9 +1,9 @@
-package repository
+package com.example.newsapp_kmp.repository
 
-import cache.CacheManager
-import model.StoryItem
-import network.StoryApi
-import utils.Result
+import com.example.newsapp_kmp.cache.CacheManager
+import com.example.newsapp_kmp.model.StoryItem
+import com.example.newsapp_kmp.network.StoryApi
+import com.example.newsapp_kmp.utils.Result
 
 class StoryRepository(
     private val api: StoryApi = StoryApi(),

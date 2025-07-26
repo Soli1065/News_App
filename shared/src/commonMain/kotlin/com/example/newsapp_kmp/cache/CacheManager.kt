@@ -1,4 +1,4 @@
-package cache
+package com.example.newsapp_kmp.cache
 
 import com.russhwolf.settings.Settings
 import com.russhwolf.settings.get
@@ -6,7 +6,7 @@ import com.russhwolf.settings.set
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
-import model.StoryItem
+import com.example.newsapp_kmp.model.StoryItem
 
 private val jsonParser = Json {
     ignoreUnknownKeys = true
